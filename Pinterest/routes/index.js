@@ -14,14 +14,22 @@ router.get('/', function(req, res, next) {
 router.get('/create', async function(req, res, next) {
   try {
     let user = await userModel.create({
-      username: 'testuser1',
-      email: 'hello',
-      password: 'password123',
-      fullname: 'Test User'
+      username: 'testuser4',
+      email: 'hello2',
+      password: 'password13',
+      fullname: 'Test User me'
     });
     res.status(201).json({ message: 'User created successfully', user });
   } catch (error) {
     res.status(500).json({ message: 'User creation failed', error: error.message });
+  }
+});
+router.get('/users',async function(req, res, next) {
+  try {
+    let users = await userModel.find({});
+    res.status(200).json({ message: 'Users fetched successfully', users });
+  } catch (error) {
+    res.status(500).json({ message: 'Failed to fetch users', error: error.message });
   }
 });
 module.exports = router;
