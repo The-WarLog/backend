@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pinterest Clone - Login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    
+  </head>
+  <body>
+    <div class="login-bg">
+      <div class="floating-shape shape1"></div>
+      <div class="floating-shape shape2"></div>
+      <div class="floating-shape shape3"></div>
+      <div class="glass-card">
+        <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="Pinterest Logo" class="logo-animate" />
+        <div class="login-title">Welcome Back!</div>
+        <div class="login-desc">Discover new ideas, get inspired, and log in to your Pinterest world.</div>
+        <form class="login-form" method="POST" action="/login">
+          <input type="email" placeholder="Email" class="detail super-input" required />
+          <input type="password" placeholder="Password" class="detail super-input" required />
+          <button class="btn int super-btn" type="submit">Log in</button>
+        </form>
+        <div class="login-links">
+          <a href="#" class="forgot">Forgot your password?</a>
+        </div>
+        <div class="or">OR</div>
+        <button class="btn fbk super-btn-alt"><span class="icon-fb"></span>Continue with Facebook</button>
+        <button class="btn ggl super-btn-alt"><span class="icon-gg"></span>Continue with Google</button>
+        <footer>
+          <p>
+            By continuing, you agree to Pinterest's
+            <b>Terms of Service, Privacy Policy.</b>
+          </p>
+          <hr />
+          <p>Not on Pinterest yet? <a href="#" class="signup-link">Sign up</a></p>
+        </footer>
+      </div>
+    </div>
+
+  </body>
+</html>
